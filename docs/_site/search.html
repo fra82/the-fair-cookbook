@@ -8,14 +8,14 @@
   <title>Search the site</title>
   <meta name="description" content="        ">
 
-  <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/search">
-  <link rel="alternate" type="application/rss+xml" title="THE FAIR COOKBOOK" href="https://fairplus.github.io/the-fair-cookbook/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/the-fair-cookbook/search">
+  <link rel="alternate" type="application/rss+xml" title="THE FAIR COOKBOOK" href="http://localhost:4000/the-fair-cookbook/feed.xml">
 
-  <meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/search" />
+  <meta property="og:url"         content="http://localhost:4000/the-fair-cookbook/search" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Search the site" />
 <meta property="og:description" content="        " />
-<meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/images/logo/cookbook-logo-small.png" />
+<meta property="og:image"       content="http://localhost:4000/the-fair-cookbook/images/logo/cookbook-logo-small.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://fairplus.github.io/the-fair-cookbook/search",
+  "mainEntityOfPage": "http://localhost:4000/the-fair-cookbook/search",
   "headline": "Search the site",
-  "datePublished": "2020-03-11T15:36:00+00:00",
-  "dateModified": "2020-03-11T15:36:00+00:00",
+  "datePublished": "2020-03-18T14:55:23+01:00",
+  "dateModified": "2020-03-18T14:55:23+01:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://fairplus.github.io/the-fair-cookbook",
+      "url": "http://localhost:4000/the-fair-cookbook",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://fairplus.github.io/the-fair-cookbook",
+    "url": "http://localhost:4000/the-fair-cookbook",
     "height": 60,
     "width": 60
   }
@@ -214,7 +214,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://fairplus.github.io") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1228,10 +1228,10 @@ initFunction(initPrint)
         "title": "frictionless",
         
         "excerpt":
-            "Frictionless Tabular Data Package Table of Contents Main FAIRification Objectives Graphical Overview of the FAIRification Recipe Objectives FAIRification Objectives, Inputs and Outputs Capability &amp; Maturity Table Table of Data Standards Executable Code in Notebook How to create workflow figures License Main Objectives The main purpose of this recipe is: Making self describing tabular data using Frictionless tools instead of dumping Excel files. Graphical Overview of the FAIRification Recipe Objectives graph LR; A[Data Acquisition] -->B(Raw Data) B --> C{FAIR by Design} C -->|Yes| D[Standard Compliant Data] C -->|No| E[Vendor locked Data] Capability &amp; Maturity Table Capability Initial Maturity Level Final Maturity...",
+            "frictionless Frictionless Tabular Data Package Table of Contents Main FAIRification Objectives Graphical Overview of the FAIRification Recipe Objectives FAIRification Objectives, Inputs and Outputs Capability &amp; Maturity Table Table of Data Standards Executable Code in Notebook How to create workflow figures License Main Objectives The main purpose of this recipe is: Making self describing tabular data using Frictionless tools instead of dumping Excel files. Graphical Overview of the FAIRification Recipe Objectives graph LR; A[Data Acquisition] -->B(Raw Data) B --> C{FAIR by Design} C -->|Yes| D[Standard Compliant Data] C -->|No| E[Vendor locked Data] Capability &amp; Maturity Table Capability Initial Maturity Level Final...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/frictionless.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/frictionless.html",
         "teaser":null},{
         "title": "None",
         
@@ -1239,7 +1239,7 @@ initFunction(initPrint)
             "Creating a FAIR Frictionless Data Package of Rose Scent profiles from a publication's supplementary data. *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use a set of python libraries to create a tabular data package from an excel file, annotate it with ontologies (CHEBI, PO, NCBITax) and validate the results against the JSON definition of...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/frictionless/0-rose-metabolites-Python-data-handling.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/frictionless/0-rose-metabolites-Python-data-handling.html",
         "teaser":null},{
         "title": "None",
         
@@ -1247,15 +1247,15 @@ initFunction(initPrint)
             "Exploring and comparing Rose Scent profiles stored as tabular data packages with plotnine, a python port of R ggplot2 *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use python equivalent of ggplot2 , the rich R graphical libraries (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly,...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/frictionless/1-rose-metabolites-Python-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/frictionless/1-rose-metabolites-Python-analysis.html",
         "teaser":null},{
         "title": "mermaidsetup",
         
         "excerpt":
-            "How to enable flow diagrams in Github from gh-pages: github pages are served by jekyll and more information can be found in the following document github pages &amp; jekyll flow and sequence diagrams are popular mean to provide a graphical overview of processes. Since FAIRification recipes are processes at the core, it is a strong requirement to enhance the recipes with such graphical overview mermaid is a javascript library allowing to generate diagrams, charts, graphs or flows from markdown-like text via javascript. mermaid documentation is extensive, see here mermaid is compatible with jekyll via a gem plugin The following steps...",
+            "mermaidsetup How to enable flow diagrams in Github from gh-pages: github pages are served by jekyll and more information can be found in the following document github pages &amp; jekyll flow and sequence diagrams are popular mean to provide a graphical overview of processes. Since FAIRification recipes are processes at the core, it is a strong requirement to enhance the recipes with such graphical overview mermaid is a javascript library allowing to generate diagrams, charts, graphs or flows from markdown-like text via javascript. mermaid documentation is extensive, see here mermaid is compatible with jekyll via a gem plugin The following...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/mermaidsetup.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/mermaidsetup.html",
         "teaser":null},{
         "title": "1",
         
@@ -1263,7 +1263,7 @@ initFunction(initPrint)
             "Creating a FAIR Frictionless Data Package of Rose Scent profiles from a publication's supplementary data. *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use a set of python libraries to create a tabular data package from an excel file, annotate it with ontologies (CHEBI, PO, NCBITax) and validate the results against the JSON definition of...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/testnb/0-rose-metabolites-Python-data-handling.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/testnb/0-rose-metabolites-Python-data-handling.html",
         "teaser":null},{
         "title": "2",
         
@@ -1271,7 +1271,7 @@ initFunction(initPrint)
             "Exploring and comparing Rose Scent profiles stored as tabular data packages with plotnine, a python port of R ggplot2 *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use python equivalent of ggplot2 , the rich R graphical libraries (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly,...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/testnb/1-rose-metabolites-Python-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/testnb/1-rose-metabolites-Python-analysis.html",
         "teaser":null},{
         "title": "4",
         
@@ -1279,7 +1279,7 @@ initFunction(initPrint)
             "Exploring a rose garden with SPARQL *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre import rdflib from rdflib import Graph, RDF from IPython.core.display import display, HTML import os import json import csv import uuid from SPARQLWrapper import SPARQLWrapper, SPARQLWrapper2, JSON, JSONLD, CSV, TSV, N3, RDF, RDFXML, TURTLE import pandas as pds import itertools import numpy as np from plotnine import * def queryResultToHTMLTable(queryResult): HTMLResult = &#39;&lt;table&gt;&lt;tr style=&quot;color:white;background-color:#43BFC7;font-weight:bold&quot;&gt;&#39; # print variable names and build header: for varName in queryResult.vars: HTMLResult = HTMLResult + &#39;&lt;td&gt;&#39; + varName + &#39;&lt;/td&gt;&#39; HTMLResult = HTMLResult + &#39;&lt;/tr&gt;&#39; # print values from each row and build...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/testnb/2-rose-metabolites-Python-RDF-querying-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/testnb/2-rose-metabolites-Python-RDF-querying-analysis.html",
         "teaser":null},{
         "title": "3",
         
@@ -1287,119 +1287,119 @@ initFunction(initPrint)
             "Exploring and comparing Rose Scent profiles stored as tabular data packages with ggplot2 R library *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed into R and exploited with rich graphical libraries, such as the well know ggplot2 (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly, this rapid exploration is possible because of independent variables and their levels have been clearly and unambiguously declared in the Tabular...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/1/testnb/3-rose-metabolites-R-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/1/testnb/3-rose-metabolites-R-analysis.html",
         "teaser":null},{
         "title": "Contributing",
         
         "excerpt":
-            "Contributing to the FAIR cookbook Welcome to the FAIR cookbook repository! We're excited you're here and want to contribute. These guidelines are designed to make it as easy as possible to get involved. If you have any questions that aren't discussed below, please let us know by opening an issue! Before you start you'll need to set up a free GitHub account and sign in. Here are some instructions. Already know what you're looking for in this guide? Jump to the following sections: Joining the conversation Contributing through Github Understanding issues, milestones, and project boards Making a change Structuring contributions...",
+            "Contributing Contributing to the FAIR cookbook Welcome to the FAIR cookbook repository! We're excited you're here and want to contribute. These guidelines are designed to make it as easy as possible to get involved. If you have any questions that aren't discussed below, please let us know by opening an issue! Before you start you'll need to set up a free GitHub account and sign in. Here are some instructions. Already know what you're looking for in this guide? Jump to the following sections: Joining the conversation Contributing through Github Understanding issues, milestones, and project boards Making a change Structuring...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/Contributing.html",
+        "url": "http://localhost:4000/the-fair-cookbook/Contributing.html",
         "teaser":null},{
         "title": "Governance",
         
         "excerpt":
-            "FAIR Cookbook Governance The purpose of this document is to formalize the governance process that the FAIR Cookbook project will be relying on. This document clarifies how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities. Table of Contents Main Governance Document Code of Conduct Current Steering Council and Institutional Partners New Subproject Incubation Process Process for Authoring Related Academic Papers License of Governance Documents To the extent possible under law, FAIR Cookbook project has waived all copyright...",
+            "Governance FAIR Cookbook Governance The purpose of this document is to formalize the governance process that the FAIR Cookbook project will be relying on. This document clarifies how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities. Table of Contents Main Governance Document Code of Conduct Current Steering Council and Institutional Partners New Subproject Incubation Process Process for Authoring Related Academic Papers License of Governance Documents To the extent possible under law, FAIR Cookbook project has waived all...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/Governance.html",
+        "url": "http://localhost:4000/the-fair-cookbook/Governance.html",
         "teaser":null},{
         "title": "People",
         
         "excerpt":
-            "Steering Council and Institutional Partners Names are followed by GitHub usernames. Benevolent Dictator for Life Philippe Rocca-Serra is the Benevolent Dictator for Life (BDFL). Steering Council Andrea Splendiani Susanna Sansone Identifier Subcommittee Chris Evelo Alasdair Gray Ontology Subcommittee Tony Burdett CMMI Subcommittee Oya Beyan Data Hosting Subcommittee Wei Gu Venkata Institutional Partners Tier 1 Institutional Council members are noted with each institution. IMI (grant officer) FAIRplus (Herman Van Vlijmen) Tier 2 github New Steering Council Members When a new member joins the steering council, the following things are done: Announce the new member on the FAIR Cookbook mailing list Make...",
+            "People Steering Council and Institutional Partners Names are followed by GitHub usernames. Benevolent Dictator for Life Philippe Rocca-Serra is the Benevolent Dictator for Life (BDFL). Steering Council Andrea Splendiani Susanna Sansone Identifier Subcommittee Chris Evelo Alasdair Gray Ontology Subcommittee Tony Burdett CMMI Subcommittee Oya Beyan Data Hosting Subcommittee Wei Gu Venkata Institutional Partners Tier 1 Institutional Council members are noted with each institution. IMI (grant officer) FAIRplus (Herman Van Vlijmen) Tier 2 github New Steering Council Members When a new member joins the steering council, the following things are done: Announce the new member on the FAIR Cookbook mailing list...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/People.html",
+        "url": "http://localhost:4000/the-fair-cookbook/People.html",
         "teaser":null},{
         "title": "Code of Conduct",
         
         "excerpt":
-            "FAIR Cookbook Code of Conduct FAIR Cookbook is an engaged and respectful community made up of people from all over the world. Your involvement helps us to further our mission and to create an open platform that serves a broad range of communities, from research and education, to journalism, industry and beyond. Naturally, this implies diversity of ideas and perspectives on often complex problems. Disagreement and healthy discussion of conflicting viewpoints is welcome: the best solutions to hard problems rarely come from a single angle. But disagreement is not an excuse for aggression: humans tend to take disagreement personally and...",
+            "Code of Conduct FAIR Cookbook Code of Conduct FAIR Cookbook is an engaged and respectful community made up of people from all over the world. Your involvement helps us to further our mission and to create an open platform that serves a broad range of communities, from research and education, to journalism, industry and beyond. Naturally, this implies diversity of ideas and perspectives on often complex problems. Disagreement and healthy discussion of conflicting viewpoints is welcome: the best solutions to hard problems rarely come from a single angle. But disagreement is not an excuse for aggression: humans tend to take...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/code_of_conduct.html",
+        "url": "http://localhost:4000/the-fair-cookbook/code_of_conduct.html",
         "teaser":null},{
         "title": "Disclaimer",
         
         "excerpt":
-            "             Disclaimer   This communication reflects the views of the authors and neither IMI nor the European Union, EFPIA or any Associated Partners are liable for any use that may be made of the information contained herein.                     ",
+            "         Disclaimer          Disclaimer   This communication reflects the views of the authors and neither IMI nor the European Union, EFPIA or any Associated Partners are liable for any use that may be made of the information contained herein.                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/disclaimer.html",
+        "url": "http://localhost:4000/the-fair-cookbook/disclaimer.html",
         "teaser":null},{
         "title": "Features and customization",
         
         "excerpt":
-            "Features This is a short demonstration textbook to show the general layout / style of textbooks built with Jupyter and Jekyll. The markdown files for this page (and others in the textbook) is generated from the notebooks with the scripts/generate_textbook.py script, which is called when you run make book. The content for the book is contained in a folder in the book's repository called content/. It has a combination of markdown and Jupyter notebooks. This content is rendered into the textbook that you see here! To begin, click on one of the chapter sections in the sidebar to the left....",
+            "Features and customization Features This is a short demonstration textbook to show the general layout / style of textbooks built with Jupyter and Jekyll. The markdown files for this page (and others in the textbook) is generated from the notebooks with the scripts/generate_textbook.py script, which is called when you run make book. The content for the book is contained in a folder in the book's repository called content/. It has a combination of markdown and Jupyter notebooks. This content is rendered into the textbook that you see here! To begin, click on one of the chapter sections in the sidebar...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/features/features.html",
+        "url": "http://localhost:4000/the-fair-cookbook/features/features.html",
         "teaser":null},{
         "title": "Markdown files",
         
         "excerpt":
-            "Creating book content The two kinds of files that contain course content are: Jupyter Notebooks Markdown files Each are contained in the content/ folder and referenced from _data/toc.yml. If the file is markdown, it will be copied over with front-matter YAML added so that Jekyll can parse it Sidebars with Jekyll You may notice that there's a sidebar to the right (if your screen is wide enough). These are automatically generated from the headers that are present in your page. The sidebar will automatically capture all 2nd and 3rd level section headers. The best way to designate these headers is...",
+            "Markdown files Creating book content The two kinds of files that contain course content are: Jupyter Notebooks Markdown files Each are contained in the content/ folder and referenced from _data/toc.yml. If the file is markdown, it will be copied over with front-matter YAML added so that Jekyll can parse it Sidebars with Jekyll You may notice that there's a sidebar to the right (if your screen is wide enough). These are automatically generated from the headers that are present in your page. The sidebar will automatically capture all 2nd and 3rd level section headers. The best way to designate these...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/features/markdown.html",
+        "url": "http://localhost:4000/the-fair-cookbook/features/markdown.html",
         "teaser":null},{
         "title": "Jupyter notebooks",
         
         "excerpt":
-            "Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and $$ math^{blocks} $$or $$ \\begin{align*} \\mbox{mean} la_{tex} \\\\ \\\\ math blocks \\end{align*} $$But make sure you \\$Escape \\$your \\$dollar signs...",
+            "Jupyter notebooks Content with notebooks You can also create content with Jupyter Notebooks. The content for the current page is contained in a Jupyter Notebook in the notebooks/ folder of the repository. This means that we can include code blocks and their outputs, and export them to Jekyll markdown. You can find the original notebook for this page at this address Markdown + notebooks As it is markdown, you can embed images, HTML, etc into your posts! You an also $add_{math}$ and $$ math^{blocks} $$or $$ \\begin{align*} \\mbox{mean} la_{tex} \\\\ \\\\ math blocks \\end{align*} $$But make sure you \\$Escape \\$your...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/features/notebooks.html",
+        "url": "http://localhost:4000/the-fair-cookbook/features/notebooks.html",
         "teaser":null},{
         "title": "Ingredients",
         
         "excerpt":
-            "             Ingredients:  Standards:   SDFile (FairSharing doi:10.25504/fairsharing.ew26v7) SMILES (FairSharing doi:10.25504/fairsharing.qv4b3c) InChI (FairSharing doi:10.25504/fairsharing.ddk9t9)  Databases:  Not applicable.  Identifiers:   InChI  Tools:   Programming Language: Groovy Dependencies: CDK 2.3  Click here on how to use:  Record validation   Input: SD file Output: Reports validation issues  Calculate InChls   Input: SD file Output: list of InChIs  Calculate SMILES strings   Input: SD file Output: list of SMILES strings                     ",
+            "         Ingredients          Ingredients:  Standards:   SDFile (FairSharing doi:10.25504/fairsharing.ew26v7) SMILES (FairSharing doi:10.25504/fairsharing.qv4b3c) InChI (FairSharing doi:10.25504/fairsharing.ddk9t9)  Databases:  Not applicable.  Identifiers:   InChI  Tools:   Programming Language: Groovy Dependencies: CDK 2.3  Click here on how to use:  Record validation   Input: SD file Output: Reports validation issues  Calculate InChls   Input: SD file Output: list of InChIs  Calculate SMILES strings   Input: SD file Output: list of SMILES strings                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/ingredients/ingredient-list.html",
+        "url": "http://localhost:4000/the-fair-cookbook/ingredients/ingredient-list.html",
         "teaser":null},{
         "title": "FAIR Cookbook",
         
         "excerpt":
-            "FAIR Cookbook The FAIR Coobook overview The FAIR Cookbook is a project aiming at collating protocols for making data FAIR The FAIR Cookbook is open source and licensed under CC-BY-4.0 The FAIR Coobook is writting using Markdown and deployed using jupyter-tool The FAIR Cookbook is an activity of the FAIRplus project funded by the Innovative Medicine Initiative (IMI) under grant agreement #802750 (2019-22). The FAIR Cookbook is currently led by: Philippe Rocca-Serra (University of Oxford) Susanna-Assunta Sansone (University of Oxford) Andrea Splendiani (Novartis) Content and learning outcomes Learn how to FAIRify a number of exemplar datasets, putting the FAIR principles...",
+            "FAIR Cookbook FAIR Cookbook The FAIR Coobook overview The FAIR Cookbook is a project aiming at collating protocols for making data FAIR The FAIR Cookbook is open source and licensed under CC-BY-4.0 The FAIR Coobook is writting using Markdown and deployed using jupyter-tool The FAIR Cookbook is an activity of the FAIRplus project funded by the Innovative Medicine Initiative (IMI) under grant agreement #802750 (2019-22). The FAIR Cookbook is currently led by: Philippe Rocca-Serra (University of Oxford) Susanna-Assunta Sansone (University of Oxford) Andrea Splendiani (Novartis) Content and learning outcomes Learn how to FAIRify a number of exemplar datasets, putting the...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/intro.html",
+        "url": "http://localhost:4000/the-fair-cookbook/intro.html",
         "teaser":null},{
         "title": "License",
         
         "excerpt":
-            "             License for this book  All content in this book (ie, any files and content in the content/ folder) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.                     ",
+            "         License          License for this book  All content in this book (ie, any files and content in the content/ folder) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license.                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/license.html",
+        "url": "http://localhost:4000/the-fair-cookbook/license.html",
         "teaser":null},{
         "title": "Publications",
         
         "excerpt":
-            "Process for Authoring FAIR Cookbook Related Academic Papers disclaimer This pages borrows heavily from https://github.com/jupyter/governance/edit/master/papers.md This document describes the processes used to author FAIR Cookbook related academic papers, which are typically submitted to peer-reviewed journals. This does not include talks and posters submitted to conferences unless the conference also publishes written proceedings. On one hand, the primary focus of FAIR Cookbook is on producing open-source documentation and actionable recipes/workflows. To this day, many of our core contributors have academic positions and active research programs. This emphasis is also reflected in the usage of FAIR principles across all areas of scientific...",
+            "Publications Process for Authoring FAIR Cookbook Related Academic Papers disclaimer This pages borrows heavily from https://github.com/jupyter/governance/edit/master/papers.md This document describes the processes used to author FAIR Cookbook related academic papers, which are typically submitted to peer-reviewed journals. This does not include talks and posters submitted to conferences unless the conference also publishes written proceedings. On one hand, the primary focus of FAIR Cookbook is on producing open-source documentation and actionable recipes/workflows. To this day, many of our core contributors have academic positions and active research programs. This emphasis is also reflected in the usage of FAIR principles across all areas of...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/papers.html",
+        "url": "http://localhost:4000/the-fair-cookbook/papers.html",
         "teaser":null},{
         "title": "Anomynization Recipe",
         
         "excerpt":
-            "             Recipe1: Anonymizing Patient Data  -DISCLAIMER: THIS IS A TEST &amp; A PLACEHOLDER  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
+            "         Anomynization Recipe          Recipe1: Anonymizing Patient Data  -DISCLAIMER: THIS IS A TEST &amp; A PLACEHOLDER  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/anonymization-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/anonymization-recipe.html",
         "teaser":null},{
         "title": "Chemical identities - Generating InChI and SMILES strings",
         
         "excerpt":
-            "             Ingredients:  Standards:   SDFile (FairSharing doi:10.25504/fairsharing.ew26v7) SMILES (FairSharing doi:10.25504/fairsharing.qv4b3c) InChI (FairSharing doi:10.25504/fairsharing.ddk9t9)  Databases:  Not applicable.  Identifiers:   InChI  Tools:   Programming Language: Groovy Dependencies: CDK 2.3  Click here on how to use:  Record validation   Input: SD file Output: Reports validation issues  Calculate InChls   Input: SD file Output: list of InChIs  Calculate SMILES strings   Input: SD file Output: list of SMILES strings                     ",
+            "         Chemical identities - Generating InChI and SMILES strings          Ingredients:  Standards:   SDFile (FairSharing doi:10.25504/fairsharing.ew26v7) SMILES (FairSharing doi:10.25504/fairsharing.qv4b3c) InChI (FairSharing doi:10.25504/fairsharing.ddk9t9)  Databases:  Not applicable.  Identifiers:   InChI  Tools:   Programming Language: Groovy Dependencies: CDK 2.3  Click here on how to use:  Record validation   Input: SD file Output: Reports validation issues  Calculate InChls   Input: SD file Output: list of InChIs  Calculate SMILES strings   Input: SD file Output: list of SMILES strings                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/chemical-identities.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/chemical-identities.html",
         "teaser":null},{
         "title": "eTOX experience Recipe",
         
@@ -1407,71 +1407,71 @@ initFunction(initPrint)
             "             Recipe1: Anonymizing Patient Data  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/etox-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/etox-recipe.html",
         "teaser":null},{
         "title": "eTOX experience Recipe",
         
         "excerpt":
-            "FAIRplus Project - FAIRirification Recipe - Squad 1 Data normalization and integration through entity linking The eTox Sampler Dataset applied scenario Motivation and aim of the FAIRification Recipe The description of the metadata as well as the characterization of the actual content of a dataset often rely on short free-text excerpts. As an example, we can consider the names of the columns of a table (e.g. \"laboratory tests\") or the different values of the cells belonging to a specific table column (e.g. “cholesterol”, “blood sugar”, “liver function”, etc.). Often such free-text excerpts are not rigorously characterized inside and across datasets,...",
+            "eTOX experience Recipe *FAIRplus Project - FAIRirification Recipe - Squad 1 Data normalization and integration through entity linking The eTox Sampler Dataset applied scenario Table of Contents Summary and graphical overview Motivation and aim Procedural description Authors Summary and graphical overview Motivation: the possibility to describe both the structure (i.e. metadata) and content of a dataset by relying on the concepts formalized by widely-adopted knowledge resources (i.e. ontologies, thesauri, etc.) plays a key role in substantially improving the level of FAIRness of the same data. Purpose: by relying on knowledge resource indexes ( 1 ), given a input dataset, this...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html",
         "teaser":null},{
         "title": "FAIR Assessment Recipe",
         
         "excerpt":
-            "Recipe1: FAIR Assessment Recipe identifier authors Philippe Rocca-Serra maintainers Philippe Rocca-Serra version 0.1 license CC-BY-4.0 Ingredients: Identifier Schema: guidance on persistent resolvable identifiers HTTP1.1 protocol Persistent Uniform Resource Locators - PURL Archival Resource Key handle system handle based http proxy for DOI Metadata Model: topic dependent Vocabularies and Terminologies: topic dependent Data Format: RDF/Linked Data Tools and Software: 5.1 resolution services: EZID resolution service name2things rsolution service identifiers.org 5.2 FAIR assessment tools FAIREvaluator FAIRShake Objectives: Perform an automatic assessment of the status of a dataset with respect to the FAIR principles. Obtain a machine readable report Step by Step Process:...",
+            "FAIR Assessment Recipe Recipe1: FAIR Assessment Recipe identifier authors Philippe Rocca-Serra maintainers Philippe Rocca-Serra version 0.1 license CC-BY-4.0 Ingredients: Identifier Schema: guidance on persistent resolvable identifiers HTTP1.1 protocol Persistent Uniform Resource Locators - PURL Archival Resource Key handle system handle based http proxy for DOI Metadata Model: topic dependent Vocabularies and Terminologies: topic dependent Data Format: RDF/Linked Data Tools and Software: 5.1 resolution services: EZID resolution service name2things rsolution service identifiers.org 5.2 FAIR assessment tools FAIREvaluator FAIRShake Objectives: Perform an automatic assessment of the status of a dataset with respect to the FAIR principles. Obtain a machine readable report Step...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-assessment-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-assessment-recipe.html",
         "teaser":null},{
         "title": "FAIR data matrix Recipe",
         
         "excerpt":
-            "Recipe-1: Making a Data Matrix FAIR identifier: DOI:https://doi.org/10.5072/FK2862KX83 version: version Table of Contents Summary Main Objectives Graphical Overview of the FAIRification Recipe Objectives Capability &amp; Maturity Table FAIRification Objectives, Inputs and Outputs Table of Data Standards Table of Software and Tools Step by Step Process References Authors License Summary: Our first data source: article by Raymond et al. Nat Genet. 50:772-777 (2018) https://doi.org/10.1038/s41588-018-0110-3; this is targeted metabolite profiling study of strain-related chemical signatures of the rose fragrance; the biological materials was selected to allow a comparison between parts of the plant, and across cultivars in the same tissue type. Our...",
+            "FAIR data matrix Recipe Recipe-1: Making a Data Matrix FAIR identifier: DOI:https://doi.org/10.5072/FK2862KX83 version: version Table of Contents Summary Main Objectives Graphical Overview of the FAIRification Recipe Objectives Capability &amp; Maturity Table FAIRification Objectives, Inputs and Outputs Table of Data Standards Table of Software and Tools Step by Step Process References Authors License Summary: Our first data source: article by Raymond et al. Nat Genet. 50:772-777 (2018) https://doi.org/10.1038/s41588-018-0110-3; this is targeted metabolite profiling study of strain-related chemical signatures of the rose fragrance; the biological materials was selected to allow a comparison between parts of the plant, and across cultivars in the...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-data-matrix-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-data-matrix-recipe.html",
         "teaser":null},{
         "title": "Converting Excel to Frictionless Data Package",
         
         "excerpt":
-            "Creating a FAIR Frictionless Data Package of Rose Scent profiles from a publication's supplementary data. *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use a set of python libraries to create a tabular data package from an excel file, annotate it with ontologies (CHEBI, PO, NCBITax) and validate the results against the JSON definition of...",
+            "Converting Excel to Frictionless Data Package Creating a FAIR Frictionless Data Package of Rose Scent profiles from a publication's supplementary data. *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use a set of python libraries to create a tabular data package from an excel file, annotate it with ontologies (CHEBI, PO, NCBITax) and validate the...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-data-matrix/0-rose-metabolites-Python-data-handling.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-data-matrix/0-rose-metabolites-Python-data-handling.html",
         "teaser":null},{
         "title": "Plotting from Frictionless Data Package in Python",
         
         "excerpt":
-            "Exploring and comparing Rose Scent profiles stored as tabular data packages with plotnine, a python port of R ggplot2 *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use python equivalent of ggplot2 , the rich R graphical libraries (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly,...",
+            "Plotting from Frictionless Data Package in Python Exploring and comparing Rose Scent profiles stored as tabular data packages with plotnine, a python port of R ggplot2 *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed as data frames and exploiting for data visualization purpose using libraries implementing graphical grammar concepts. Here, we show how to use python equivalent of ggplot2 , the rich R graphical libraries (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-data-matrix/1-rose-metabolites-Python-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-data-matrix/1-rose-metabolites-Python-analysis.html",
         "teaser":null},{
         "title": "Exploration fo semantic model with SPARQL",
         
         "excerpt":
-            "Exploring a rose garden with SPARQL *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre import rdflib from rdflib import Graph, RDF from IPython.core.display import display, HTML import os import json import csv import uuid from SPARQLWrapper import SPARQLWrapper, SPARQLWrapper2, JSON, JSONLD, CSV, TSV, N3, RDF, RDFXML, TURTLE import pandas as pds import itertools import numpy as np from plotnine import * def queryResultToHTMLTable(queryResult): HTMLResult = &#39;&lt;table&gt;&lt;tr style=&quot;color:white;background-color:#43BFC7;font-weight:bold&quot;&gt;&#39; # print variable names and build header: for varName in queryResult.vars: HTMLResult = HTMLResult + &#39;&lt;td&gt;&#39; + varName + &#39;&lt;/td&gt;&#39; HTMLResult = HTMLResult + &#39;&lt;/tr&gt;&#39; # print values from each row and build...",
+            "Exploration fo semantic model with SPARQL Exploring a rose garden with SPARQL *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre import rdflib from rdflib import Graph, RDF from IPython.core.display import display, HTML import os import json import csv import uuid from SPARQLWrapper import SPARQLWrapper, SPARQLWrapper2, JSON, JSONLD, CSV, TSV, N3, RDF, RDFXML, TURTLE import pandas as pds import itertools import numpy as np from plotnine import * def queryResultToHTMLTable(queryResult): HTMLResult = &#39;&lt;table&gt;&lt;tr style=&quot;color:white;background-color:#43BFC7;font-weight:bold&quot;&gt;&#39; # print variable names and build header: for varName in queryResult.vars: HTMLResult = HTMLResult + &#39;&lt;td&gt;&#39; + varName + &#39;&lt;/td&gt;&#39; HTMLResult = HTMLResult + &#39;&lt;/tr&gt;&#39; # print...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-data-matrix/2-rose-metabolites-Python-RDF-querying-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-data-matrix/2-rose-metabolites-Python-RDF-querying-analysis.html",
         "teaser":null},{
         "title": "Plotting from Frictionless Data Package in R",
         
         "excerpt":
-            "Exploring and comparing Rose Scent profiles stored as tabular data packages with ggplot2 R library *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed into R and exploited with rich graphical libraries, such as the well know ggplot2 (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly, this rapid exploration is possible because of independent variables and their levels have been clearly and unambiguously declared in the Tabular...",
+            "Plotting from Frictionless Data Package in R Exploring and comparing Rose Scent profiles stored as tabular data packages with ggplot2 R library *Philippe Rocca-Serra (philippe.rocca-serra[at]oerc.ox.ac.uk), University of Oxford e-Research Centre Background: Experimental results such as metabolite profiling data published in [1,2] can be straightfowardly reported using OKFN Data Packages. Such components can be easily parsed into R and exploited with rich graphical libraries, such as the well know ggplot2 (https://ggplot2.tidyverse.org/). A few line of codes allow to query datasets and rapidly explore the information. Most importantly, this rapid exploration is possible because of independent variables and their levels have been...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/fair-data-matrix/3-rose-metabolites-R-analysis.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/fair-data-matrix/3-rose-metabolites-R-analysis.html",
         "teaser":null},{
         "title": "How to create a recipe",
         
         "excerpt":
-            "How to create a FAIRPlus Coobook Recipe ? Table of Contents Main Objectives Graphical Overview of the FAIRification Recipe Objectives Prequisites and Getting Set up Option-1 Writing the recipe in Mardown syntax Option-2 Writing the recipe as a Google document Dealing with merge conflicts Authors: License: Main Objectives The main purpose of this recipe is: Learn how to get set up to commit to the FAIR Cookbook or create a recipe using the GoogleDoc Template Graphical Overview of the FAIRification Recipe Objectives graph TD; A[Data FAIRification] -->B(Write-up FAIRification experience) B --> C{know markdown?} C -->|Yes| D(use the markdown recipe template)...",
+            "How to create a recipe How to create a FAIRPlus Coobook Recipe ? Table of Contents Main Objectives Graphical Overview of the FAIRification Recipe Objectives Prequisites and Getting Set up Option-1 Writing the recipe in Mardown syntax Option-2 Writing the recipe as a Google document Dealing with merge conflicts Authors: License: Main Objectives The main purpose of this recipe is: Learn how to get set up to commit to the FAIR Cookbook or create a recipe using the GoogleDoc Template Graphical Overview of the FAIRification Recipe Objectives graph TD; A[Data FAIRification] -->B(Write-up FAIRification experience) B --> C{know markdown?} C -->|Yes|...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/howtocreatecard.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/howtocreatecard.html",
         "teaser":null},{
         "title": "ND4BB experience Recipe",
         
@@ -1479,15 +1479,15 @@ initFunction(initPrint)
             "             Recipe1: Anonymizing Patient Data  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/nd4bb-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/nd4bb-recipe.html",
         "teaser":null},{
         "title": "ND4BB experience Recipe",
         
         "excerpt":
-            "ND4BB dataset FAIRification recipe Version: 2, this recipe is extracted from Version 1 Ingredients Raw Data: AMR Compounds Database Metadata Model Vocabularies and Terminologies Data Format: Excel spreadsheet PropertyGroup Property Value Tools and Software: Data curation tools: Excel, JAVA FAIRification pipeline tools: KNIME workflow Ontology recommender: ZOOMA, NCBO FAIR assessment: RDA indicator V0.03 Objectives The current AMR dataset is stored in a local webpage at UNICA. We make the AMR data more accessible by extracting the data to a public repository using machine readable format. Also generic improvement of the FAIR parameters. Step by Step Process Dataset description The AMR...",
+            "ND4BB experience Recipe ND4BB dataset FAIRification recipe Version: 2, this recipe is extracted from Version 1 Ingredients Raw Data: AMR Compounds Database Metadata Model Vocabularies and Terminologies Data Format: Excel spreadsheet PropertyGroup Property Value Tools and Software: Data curation tools: Excel, JAVA FAIRification pipeline tools: KNIME workflow Ontology recommender: ZOOMA, NCBO FAIR assessment: RDA indicator V0.03 Objectives The current AMR dataset is stored in a local webpage at UNICA. We make the AMR data more accessible by extracting the data to a public repository using machine readable format. Also generic improvement of the FAIR parameters. Step by Step Process Dataset...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/nd4bb_raw/FAIRification_CookBook_Recipe1_V02.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/nd4bb_raw/FAIRification_CookBook_Recipe1_V02.html",
         "teaser":null},{
         "title": "ONCOTRACK experience Recipe",
         
@@ -1495,15 +1495,15 @@ initFunction(initPrint)
             "             Recipe1: Anonymizing Patient Data  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/oncotrack-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/oncotrack-recipe.html",
         "teaser":null},{
         "title": "ONCOTRACK experience Recipe",
         
         "excerpt":
-            "Oncotrack FAIRification recipe Ingredients Metadata model Oncotrack cohort metadata Oncotrack drug sensitivity data Oncotrack metadata template Vocabularies and terminologies Pharmaceutical drug names follow the nomenclature of ChEBI and ChEMBL database. All drug ontologies are listed here. All abbreviations and acronyms used in OncoTrack cohort metadata are listed in the OncoTrack public metadata acronym table. Data format Input data: Excel Output data: tab-delimited text file JSON file (JSON schema: BioSamples databases JSON schema) Tools and software Metadata extract and transform tool: R (Version 3.6.1) String parsing: R package stringi_1.4.3, stringr_1.4.0 Excel file Loading: readxl_1.3.1 Data structure transform:plyr_1.8.4 JSON format parsing: rjson_0.2.20...",
+            "ONCOTRACK experience Recipe Oncotrack FAIRification recipe Ingredients Metadata model Oncotrack cohort metadata Oncotrack drug sensitivity data Oncotrack metadata template Vocabularies and terminologies Pharmaceutical drug names follow the nomenclature of ChEBI and ChEMBL database. All drug ontologies are listed here. All abbreviations and acronyms used in OncoTrack cohort metadata are listed in the OncoTrack public metadata acronym table. Data format Input data: Excel Output data: tab-delimited text file JSON file (JSON schema: BioSamples databases JSON schema) Tools and software Metadata extract and transform tool: R (Version 3.6.1) String parsing: R package stringi_1.4.3, stringr_1.4.0 Excel file Loading: readxl_1.3.1 Data structure transform:plyr_1.8.4 JSON...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/oncotrack_raw/rawRecipe-oncotrack.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/oncotrack_raw/rawRecipe-oncotrack.html",
         "teaser":null},{
         "title": "First Recipe",
         
@@ -1511,7 +1511,7 @@ initFunction(initPrint)
             "             Recipe1: Anonymizing Patient Data  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/recipe-1.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/recipe-1.html",
         "teaser":null},{
         "title": "Second Recipe",
         
@@ -1519,23 +1519,23 @@ initFunction(initPrint)
             "Recipe1: Making a Data Matrix FAIR identifier authors Philippe Rocca-Serra (@proccaserra) Susanna-Assunta Sansone (@susannasansone) maintainers Philippe Rocca-Serra (@proccaserra) version license Ingredients: Identifier Schema: - DOI - purl 1. Metadata Model: -[Frictionless JSON Data Package](https://frictionlessdata.io/specs/data-package/) -[ISA-Tab](https://doi.org/10.25504/FAIRsharing.53gp75) 2. Vocabularies and Terminologies: -[CHEBI](http://www.obofoundry.org/ontology/chebi.html) -[STATO](https://www.stato-ontology.org) -[NCBITaxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) -[Plant Ontology](http://www.obofoundry.org/ontology/po.html) 3. Data Format: - 4. Tools and Software: -[zenodo API] -[github] -[python] -[matplotlib] -[jupyter notebook] -[cookie cutter for data science] -[rdflib] Objectives: - ensure that results presented in MS Excel or PDF tables are made more open and unambiguous. - provide an RDF representation - enable reproduciblity of results - evaluate efficiency of the method via...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/recipe-2.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/recipe-2.html",
         "teaser":null},{
         "title": "Recipe Template",
         
         "excerpt":
-            "Table of Contents Main FAIRification Objectives Graphical Overview of the FAIRification Recipe Objectives FAIRification Objectives, Inputs and Outputs Capability &amp; Maturity Table Table of Data Standards Executable Code in Notebook How to create workflow figures License Main Objectives The main purpose of this recipe is: Making self describing tabular data using Frictionless tools instead of dumping Excel files. Graphical Overview of the FAIRification Recipe Objectives Note: use this section to provide a decision tree for the overall process described in the recipe For more information about the syntax used to generate the diagram, please refer to the following documentation graph...",
+            "Recipe Template Table of Contents Main FAIRification Objectives Graphical Overview of the FAIRification Recipe Objectives FAIRification Objectives, Inputs and Outputs Capability &amp; Maturity Table Table of Data Standards Executable Code in Notebook How to create workflow figures License Main Objectives The main purpose of this recipe is: Making self describing tabular data using Frictionless tools instead of dumping Excel files. Graphical Overview of the FAIRification Recipe Objectives Note: use this section to provide a decision tree for the overall process described in the recipe For more information about the syntax used to generate the diagram, please refer to the following...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/recipe-template.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/recipe-template.html",
         "teaser":null},{
         "title": "Recipes",
         
         "excerpt":
-            "             recipes  Text                     ",
+            "         Recipes          recipes  Text                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/recipes.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/recipes.html",
         "teaser":null},{
         "title": "RESOLUTE experience Recipe",
         
@@ -1543,28 +1543,29 @@ initFunction(initPrint)
             "             Recipe1: Anonymizing Patient Data  identifier  authors  maintainers  version  license  Ingredients:   Identifier Schema:  1. Metadata Model:     -     -     - 2. Vocabularies and Terminologies:     -     -     - 3. Data Format:     -     -     - 4. Tools and  Software:     -     -     -    Objectives:  Step by Step Process:    ### Step1:   ### Step2:   ### Step3:   ### Step4:   ### Step5:   ß                     ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/resolute-recipe.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/resolute-recipe.html",
         "teaser":null},{
         "title": "RESOLUTE experience Recipe",
         
         "excerpt":
-            "RESOLUTE FAIRification Recipe Ingredients Data transfer tools: SFTP server OneDrive Amazon S3 Buckets Data hosting platform: raw data: SRA [Transcriptomics] ProteomeXchange [Proteomics] Samples metadata: BioSamples Data standards Transcriptomics community standard: MINSEQE Sample metadata schema: BioSamples JSON schema Data submission portal schema FAIR evaluation standard: RDA FAIR indicators This recipe provides an example of sample metadata extraction and curation practices, suggests a community standard for transcriptomics data and proposes a transcriptomics JSON schema, which allows direct submission of transcriptomics data to the public databases. Different approaches to assess the FAIR level of the dataset is also discussed. Sample metadata ETL pipeline...",
+            "RESOLUTE experience Recipe RESOLUTE FAIRification Recipe Ingredients Data transfer tools: SFTP server OneDrive Amazon S3 Buckets Data hosting platform: raw data: SRA [Transcriptomics] ProteomeXchange [Proteomics] Samples metadata: BioSamples Data standards Transcriptomics community standard: MINSEQE Sample metadata schema: BioSamples JSON schema Data submission portal schema FAIR evaluation standard: RDA FAIR indicators This recipe provides an example of sample metadata extraction and curation practices, suggests a community standard for transcriptomics data and proposes a transcriptomics JSON schema, which allows direct submission of transcriptomics data to the public databases. Different approaches to assess the FAIR level of the dataset is also discussed. Sample...",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/recipes/resolute_raw/rawRecipe_resolute.html",
+        "url": "http://localhost:4000/the-fair-cookbook/recipes/resolute_raw/rawRecipe_resolute.html",
         "teaser":null},{
         "title": "Development Roadmap",
         
         "excerpt":
-            "             FAIR cookbook development roadmap  An overview of the work planned for the coming year.   gantt     title A Gantt Diagram     dateFormat  YYYY-MM-DD     section Section     A task           :a1, 2014-01-01, 30d     Another task     :after a1  , 20d     section Another     Task in sec      :2014-01-12  , 12d     another task      : 24d An alternative plan   gantt     title Another Gantt Diagram     dateFormat  YYYY-MM-DD     section DataCatalog     model selection and design        :a1, 2020-01-28, 90d     curatorial policy              :a2, after a1, 5d     implementation                  :a3, after a2 , 60d     section Terminology Service     deploy        :a4, 2020-01-28, 90d     test               :a5, after a4, 5d     documentation                  :a6, after a5 , 60d                    ",
+            "         Development Roadmap          FAIR cookbook development roadmap  An overview of the work planned for the coming year.   gantt     title A Gantt Diagram     dateFormat  YYYY-MM-DD     section Section     A task           :a1, 2014-01-01, 30d     Another task     :after a1  , 20d     section Another     Task in sec      :2014-01-12  , 12d     another task      : 24d An alternative plan   gantt     title Another Gantt Diagram     dateFormat  YYYY-MM-DD     section DataCatalog     model selection and design        :a1, 2020-01-28, 90d     curatorial policy              :a2, after a1, 5d     implementation                  :a3, after a2 , 60d     section Terminology Service     deploy        :a4, 2020-01-28, 90d     test               :a5, after a4, 5d     documentation                  :a6, after a5 , 60d                    ",
         "categories": [],
         "tags": [],
-        "url": "https://fairplus.github.io/the-fair-cookbook/roadmap.html",
+        "url": "http://localhost:4000/the-fair-cookbook/roadmap.html",
         "teaser":null},]
 </script>
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
-              <nav class="c-page__nav">
+              
+<nav class="c-page__nav">
   
 
   

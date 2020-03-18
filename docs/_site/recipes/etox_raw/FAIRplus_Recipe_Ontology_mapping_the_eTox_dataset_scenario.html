@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>eTOX experience Recipe</title>
-  <meta name="description" content="        FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Sampler Dataset applied scenari...">
+  <meta name="description" content="        eTOX experience Recipe    *FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Samp...">
 
-  <link rel="canonical" href="https://fairplus.github.io/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html">
-  <link rel="alternate" type="application/rss+xml" title="THE FAIR COOKBOOK" href="https://fairplus.github.io/the-fair-cookbook/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html">
+  <link rel="alternate" type="application/rss+xml" title="THE FAIR COOKBOOK" href="http://localhost:4000/the-fair-cookbook/feed.xml">
 
-  <meta property="og:url"         content="https://fairplus.github.io/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html" />
+  <meta property="og:url"         content="http://localhost:4000/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="eTOX experience Recipe" />
-<meta property="og:description" content="        FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Sampler Dataset applied scenari..." />
-<meta property="og:image"       content="https://fairplus.github.io/the-fair-cookbook/images/logo/cookbook-logo-small.png" />
+<meta property="og:description" content="        eTOX experience Recipe    *FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Samp..." />
+<meta property="og:image"       content="http://localhost:4000/the-fair-cookbook/images/logo/cookbook-logo-small.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -24,11 +24,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://fairplus.github.io/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html",
+  "mainEntityOfPage": "http://localhost:4000/the-fair-cookbook/recipes/etox_raw/FAIRplus_Recipe_Ontology_mapping_the_eTox_dataset_scenario.html",
   "headline": "eTOX experience Recipe",
-  "datePublished": "2020-03-11T15:36:00+00:00",
-  "dateModified": "2020-03-11T15:36:00+00:00",
-  "description": "        FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Sampler Dataset applied scenari...",
+  "datePublished": "2020-03-18T14:55:23+01:00",
+  "dateModified": "2020-03-18T14:55:23+01:00",
+  "description": "        eTOX experience Recipe    *FAIRplus Project - FAIRirification Recipe - Squad 1Data normalization and integration through entity linking The eTox Samp...",
   "author": {
     "@type": "Person",
     "name": "Philippe Rocca-Serra"
@@ -38,14 +38,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://fairplus.github.io/the-fair-cookbook",
+      "url": "http://localhost:4000/the-fair-cookbook",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://fairplus.github.io/the-fair-cookbook",
+    "url": "http://localhost:4000/the-fair-cookbook",
     "height": 60,
     "width": 60
   }
@@ -214,7 +214,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://fairplus.github.io") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
@@ -1218,12 +1218,50 @@ initFunction(initPrint)
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
                   <main class="jupyter-page">
+    <div id="page-info"><div id="page-title">eTOX experience Recipe</div>
+</div>
     <div class="jb_cell">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>FAIRplus Project - FAIRirification Recipe - Squad 1</em></p>
-<h1 id="Data-normalization-and-integration-through-entity-linking">Data normalization and integration through entity linking<a class="anchor-link" href="#Data-normalization-and-integration-through-entity-linking"> </a></h1><h2 id="The-eTox-Sampler-Dataset-applied-scenario"><em>The eTox Sampler Dataset applied scenario</em><a class="anchor-link" href="#The-eTox-Sampler-Dataset-applied-scenario"> </a></h2><h3 id="Motivation-and-aim-of-the-FAIRification-Recipe">Motivation and aim of the FAIRification Recipe<a class="anchor-link" href="#Motivation-and-aim-of-the-FAIRification-Recipe"> </a></h3><p>The description of the metadata as well as the characterization of the actual content of a dataset often rely on short free-text excerpts. As an example, we can consider the names of the columns of a table (e.g. "laboratory tests") or the different values of the cells belonging to a specific table column (e.g. “cholesterol”, “blood sugar”, “liver function”, etc.). Often such free-text excerpts are not rigorously characterized inside and across datasets, thus leading to situations in which it is difficult to unambiguously describe the semantics of each excerpt due to polysemy (i.e. several meanings can be associated to the same excerpt) and synonymy (i.e. a specific meaning can be expressed by more than one excerpt).</p>
+<p>*<em>FAIRplus Project - FAIRirification Recipe - Squad 1</em></p>
+<h1 id="Data-normalization-and-integration-through-entity-linking">Data normalization and integration through entity linking<a class="anchor-link" href="#Data-normalization-and-integration-through-entity-linking"> </a></h1><h3 id="The-eTox-Sampler-Dataset-applied-scenario"><em>The eTox Sampler Dataset applied scenario</em><a class="anchor-link" href="#The-eTox-Sampler-Dataset-applied-scenario"> </a></h3><h2 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents"> </a></h2><ol>
+<li><a href="#Summary-and-graphical-overview">Summary and graphical overview</a></li>
+<li><a href="#Motivation-and-aim">Motivation and aim</a></li>
+<li><a href="#Procedural-description">Procedural description</a></li>
+<li><a href="#Authors">Authors</a></li>
+</ol>
+<hr>
+<h2 id="Summary-and-graphical-overview">Summary and graphical overview<a class="anchor-link" href="#Summary-and-graphical-overview"> </a></h2><p><strong>Motivation</strong>: the possibility to describe both the structure (i.e. metadata) and content of a dataset by relying on the concepts formalized by widely-adopted knowledge resources (i.e. ontologies, thesauri, etc.) plays a key role in substantially improving the level of FAIRness of the same data.</p>
+<p><strong>Purpose</strong>: by relying on knowledge resource indexes ( <a href="#myfootnote">1</a> ), given a input dataset, this FAIRification Recipe aims at: (i) identifying the knowledge resources that better describe the structure (i.e. metadata) and content of the dataset under consideration, in terms of semantic coverage; (ii) gathering the most relevant concepts useful to characterize each piece of knowledge that belongs to the input dataset (i.e. each text excerpt that describes a specific aspect of the input dataset).</p>
+<p><a class="anchor-link" name="overview"></a><br>
+<strong>Graphical overview</strong>: A visual overview of the proposed procedure, shown in <a href="#overview">Figure 1</a>, is described hareinafter:</p>
+<p><img src="image_0.png" alt="overview"><br>
+<em>Figure 1 - Overview of the automatic ontology coverage evaluation strategy</em></p>
+<p><strong>&gt; INPUT</strong>: a list of terms (i.e. short free-text excerpts, see <a href="#overview">Figure 1</a>) used to describe a varied set of aspects of a dataset under analysis (e.g. the names of the columns of the tables of the dataset - i.e. cell headers).</p>
+<ul>
+<li><p><strong>STEP 1</strong> - Query expansion: generate for each input term a set of alternative terms by deriving: (i) its plural/singular form (the term “neoplasias” generates the alternative term “neoplasia”) and  (ii) a new term without punctuation. . All the text analyses exploited during the query expansion step are performed by relying on the Stanford CoreNLP tools ( <a href="#myfootnote">2</a> ).</p>
+</li>
+<li><p><strong>STEP 2</strong> - Querying knowledge resource indexes: by considering both input terms and alternative terms generated by query expansion (step 1), (a set of) knowledge resource indexes are queried. By the way of example, we rely on the EBI Ontology Lookup Service (OLS) and OntoIndex. The latter is a knowledge resource indexer developed by the Hospital del Mar Medical Research Institute (IMIM), Barcelona to complement the OLS to search for concept matches against knowledge resources that are not contemplated by the OLS.</p>
+</li>
+<li><p><strong>STEP 3</strong> - Merging and characterization of retrieved mappings: for each input term eventually enriched by considering alternative terms, each knowledge resource index retrieves a set of matching concepts. We merge all the concepts retrieved by the knowledge resource indexes considered to avoid duplicate concepts. From the set of merged matching concepts that describe an input term we derive two non-intersecting subsets: concepts with exact match and concepts with partial match (see below for a detailed description exact and partial matches).</p>
+</li>
+<li><p><strong>STEP 4</strong> - Concept mapping statistics generation: this final step takes care of the aggregation and analysis of term-to-concept matches to generate both knowledge resource coverage report and the list of knowledge resource mappings.</p>
+</li>
+</ul>
+<p><strong>&gt; OUTPUT</strong>:</p>
+<ul>
+<li><em>knowledge resource coverage report</em>: statistics about the semantic coverage of the knowledge resources stored in the index are generated by considering both all term-to-concept matches and exact matches or partial matches individually;  </li>
+<li><em>list of knowledge resource mappings</em>: for each input term an easy-to-review list of exact matches and partial matches of terms to knowledge resource concepts is generated.  </li>
+</ul>
+<p><a class="anchor-link" name="myfootnote"></a><br>
+<br/><br/></p>
+<p><sup><sub>  
+1: Knowledge resource indexes are tools that enable data normalization and integration through concept mapping: by indexing a set of knowledge resources (e.g. ontologies, thesauri, etc.), they automatically select, given of a piece of knowledge that is usually represented by a text excerpt, the most relevant concepts useful to formally characterize its semantics. The  EBI Ontology Lookup Service ( [https://www.ebi.ac.uk/ols/index](https://www.ebi.ac.uk/ols/index) ) represents a well-known example of a knowledge resource index.<br/>
+2: Stanford CoreNLP Tools Web: [https://stanfordnlp.github.io/CoreNLP/](https://stanfordnlp.github.io/CoreNLP/)  
+</sub></sup></p>
+<hr>
+<h2 id="Motivation-and-aim">Motivation and aim<a class="anchor-link" href="#Motivation-and-aim"> </a></h2><p>The description of the metadata as well as the characterization of the actual content of a dataset often rely on short free-text excerpts. As an example, we can consider the names of the columns of a table (e.g. "laboratory tests") or the different values of the cells belonging to a specific table column (e.g. “cholesterol”, “blood sugar”, “liver function”, etc.). Often such free-text excerpts are not rigorously characterized inside and across datasets, thus leading to situations in which it is difficult to unambiguously describe the semantics of each excerpt due to polysemy (i.e. several meanings can be associated to the same excerpt) and synonymy (i.e. a specific meaning can be expressed by more than one excerpt).</p>
 <p>In this regard, the possibility to describe both the structure (i.e. metadata) and content of a dataset by relying on the concepts formalized by widely-adopted knowledge resources (i.e. ontologies, thesauri, etc.) plays a key role in substantially improving the level of FAIRness of the same data: the identification of the concepts that better describe each piece of information included in a dataset is usually referred to as <strong>entity linking</strong>. The use of standardized, shared, consistent identifiers to unambiguously characterize the semantics of data fosters <em>Interoperability</em> and <em>Reusability</em>: indeed, the fact that distinct datasets rely on the same, shared set of concepts to describe (part of) their content makes their integration significantly easier, thus opening up novel possibilities for cross-fertilization. Also the <em>Findability</em> and <em>Accessibility</em> of information significantly benefit from the availability of descriptions of datasets based on standard vocabularies: information from distinct datasets can be seamlessly indexed and searched and data consumers, both humans and machines, can easily interpret, validate and summarize their content.</p>
 <p>Given a  dataset, this FAIRification Recipe focuses on (semi-)automated approaches and best practices to:</p>
 <ul>
@@ -1243,8 +1281,8 @@ initFunction(initPrint)
 </ul>
 <p><em>Knowledge resource indexes</em> represent core tools to enable data normalization and integration through concept mapping, thus fostering the reuse of existing knowledge resources. Knowledge resource indexes are repositories where several types of knowledge resources (e.g. ontologies, thesauri, etc.), usually describing distinct facets of a knowledge domain, are stored. Such indexes provide users with <strong>specific mechanisms to identify inside the set of indexed knowledge resources, the most relevant concepts useful to formally characterize the semantics of a piece of knowledge that is usually represented by a text excerpt</strong>. In particular, given a text excerpt (i.e. "neoplasia"), knowledge resource indexes select and rank concepts useful to characterize its semantics by relying on string matching strategies: the set of concepts that are described by labels (i.e. names or longer descriptions) that better match the text excerpt provided as input are retrieved. For instance, given the input text excerpt “neoplasia”, the concept with identifier <em>MC_0000002</em> lexicalized by means of the label “<em>Neoplasia</em>”, belonging to the Histopathology ontology is retrieved. In this FAIRification Recipe, we will rely on the EBI Ontology Lookup Service (OLS), a knowledge resource index that at the time of writing, stores the most recent versions of 236 widespread biomedical ontologies. OLS provides an open REST API that supports the retrieval of the most relevant concepts useful to describe a text excerpt provided as input.</p>
 <p>Hereinafter this FAIRification Recipe, by relying on the OLS API, given an input dataset, presents into detail an automated ontology coverage evaluation strategy. Such strategy aims at: (i) identifying the knowledge resources that better describe the structure (i.e. metadata) and content of the dataset under consideration, in terms of semantic coverage; (ii) gathering the most relevant concepts useful to characterize each piece of knowledge that belongs to the input dataset (i.e. each text excerpt that describes a specific aspect of the input dataset). In particular, basic linguistic analyses are performed on both the descriptive text excerpts provided as input to the OLS API and the labels of the corresponding related concepts that are retrieved by the same API. By pre-processing each input text excerpt we intend to perform <em>basic query expansion procedures with the aim of increasing the recall of relevant concepts when querying the OLS knowledge resource indexer</em>. By analyzing the labels of the list of matching concepts retrieved by the OLS API, we intend to <em>refine such concept list by relying on rules and heuristics based on linguistic analyses</em>. When we deal with the evaluation of the semantic coverage of knowledge resources, it is not uncommon that the indexers we have at our disposal (e.g. the OLS) do not include all the knowledge resources we would like to consider as potential sources of useful concepts. To mitigate this issue, we rely on <em>OntoIndex</em>, a knowledge resource indexer based on Elasticsearch and developed by the Hospital del Mar Medical Research Institute (IMIM), Barcelona. The current version of <em>OntoIndex</em> supports the import, indexing and search for concepts that belong to ontologies formalized by means of the Ontology Web Language (OWL) or the Open Biological and Biomedical Ontology (OBO) format, the latter widely adopted to describe biomedical knowledge resources.</p>
-<h3 id="Procedural-description">Procedural description<a class="anchor-link" href="#Procedural-description"> </a></h3><p>The exploitation of the concepts formalized by widely-adopted knowledge resources (i.e. ontologies, thesauri, etc.) to semantically describe the structure (i.e. metadata) and content of a dataset is a key aspect to foster the FAIRness of the same data. With this regard, here we present an approach whose ultimate objective is easing and automating the choice and usage of a consistent and informed set of knowledge resources to describe a dataset under consideration. In particular, the proposed strategy <strong>automatically evaluates the suitability of a set of knowledge resources  (i.e. ontologies, thesauri, etc.) with respect to the semantic characterization of a list of terms that occur in an input dataset</strong> (i.e. the presence inside the considered knowledge resources, of concepts that properly describe the terms belonging to the input list).</p>
-<p>The input of our approach is represented by a list of terms (i.e. short free-text excerpts, see Figure 1) that are used to describe a varied set of aspects of a dataset under analysis (e.g. the names of the columns of the tables of the dataset - i.e. cell headers). By considering the knowledge resources stored in as index (namely the OLS, eventually complemented by <em>OntoIndex</em>) we intend to generate as final outputs:</p>
+<h2 id="Procedural-description">Procedural description<a class="anchor-link" href="#Procedural-description"> </a></h2><p>The exploitation of the concepts formalized by widely-adopted knowledge resources (i.e. ontologies, thesauri, etc.) to semantically describe the structure (i.e. metadata) and content of a dataset is a key aspect to foster the FAIRness of the same data. With this regard, here we present an approach whose ultimate objective is easing and automating the choice and usage of a consistent and informed set of knowledge resources to describe a dataset under consideration. In particular, the proposed strategy <strong>automatically evaluates the suitability of a set of knowledge resources  (i.e. ontologies, thesauri, etc.) with respect to the semantic characterization of a list of terms that occur in an input dataset</strong> (i.e. the presence inside the considered knowledge resources, of concepts that properly describe the terms belonging to the input list).</p>
+<p>The input of our approach is represented by a list of terms (i.e. short free-text excerpts, see <a href="#overview">Figure 1</a>) that are used to describe a varied set of aspects of a dataset under analysis (e.g. the names of the columns of the tables of the dataset - i.e. cell headers). By considering the knowledge resources stored in as index (namely the OLS, eventually complemented by <em>OntoIndex</em>) we intend to generate as final outputs:</p>
 <ul>
 <li><p>a <strong>knowledge resource coverage report</strong>: that provides statistics about the semantic coverage of the knowledge resources stored in the index. The coverage is evaluated in terms of number of input terms described by the concepts formalized in a specific knowledge resource. In particular, we evaluate the semantic coverage by considering exclusively <strong>exact matches</strong> or <strong>partial matches</strong> of terms to concepts (see below for a detailed description <strong>exact</strong> and <strong>partial</strong> matches);</p>
 </li>
@@ -1252,18 +1290,18 @@ initFunction(initPrint)
 </li>
 </ul>
 <p>The <strong>knowledge resource coverage report</strong> provides <em>useful insights to select the set of knowledge resources that better support the semantic characterization of the dataset under analysis</em>. Moreover, the list of <strong>knowledge resource mappings</strong> enables users to explore term specific mappings to concepts in order to <em>obtain finer-grained information on the quality of the automatically generated mappings</em> as well as to support <em>activities of manual revision and validation of the proposed mappings</em>.</p>
-<p>The sequential steps that compose the proposed approach are (see Figure 1):</p>
+<p>The sequential steps that compose the proposed approach are (see <a href="#overview">Figure 1</a>):</p>
 <ol>
 <li><p><strong>Query expansion</strong>: we analyze the text of each input term. In case it includes plural nouns or adjectives we generate an alternative term substituting plural with singular words (the term "neoplasias" generates the alternative term “neoplasia”). We also consider the presence of punctuation in the input term, generating an alternative term without punctuation. All the text analyses exploited during the query expansion step are performed by relying on the Stanford CoreNLP tools. This strategy is motivated by the fact that some knowledge resource indexes like the OLS substantially change their results if we consider linguistic variations of the query string, for instance with respect to the singular and plural forms of nouns and adjectives. For instance, at the time of writing, when we query the OLS, all the top-10 results (i.e. matching ontological concepts) we get for the input term “neoplasm” are different from the top-10 results we can retrieve if we use the plural of the same term, “neoplasms”.</p>
 </li>
-<li><p><strong>Querying knowledge resource indexes</strong>: by considering each input term as well as each related alternative term obtained by the term expansion, we query (a set of) knowledge resource indexes. In particular, in Figure 2 the following knowledge resource indexes are considered: the OLS index and <em>OntoIndex</em>. The latter is a knowledge resource indexer developed by the Hospital del Mar Medical Research Institute (IMIM), Barcelona. It is exploited to complement the OLS when we need to search for concept matches against knowledge resources that are not contemplated by the OLS;</p>
+<li><p><strong>Querying knowledge resource indexes</strong>: by considering each input term as well as each related alternative term obtained by the term expansion, we query (a set of) knowledge resource indexes. In particular, in <a href="#example">Figure 2</a> the following knowledge resource indexes are considered: the OLS index and <em>OntoIndex</em>. The latter is a knowledge resource indexer developed by the Hospital del Mar Medical Research Institute (IMIM), Barcelona. It is exploited to complement the OLS when we need to search for concept matches against knowledge resources that are not contemplated by the OLS;</p>
 </li>
 <li><p><strong>Merging and characterization of retrieved mappings</strong>: for each input term, eventually complemented with alternative terms by query expansion, each knowledge resource index retrieves a set of matching concepts. We merge all the concepts retrieved by the knowledge resource indexes by querying such index by considering both the input term and its alternative terms. The merging strategy is mainly useful to avoid duplicate concepts. From the set of merged matching concepts that describe an input term we derive two non-intersecting subsets: concepts with <strong>exact match</strong> and concepts with <strong>partial match</strong> (see below for a detailed description <strong>exact</strong> and <strong>partial</strong> matches);</p>
 </li>
 <li><p><strong>Concept mapping statistics generation</strong>: this final step takes care of the generation of both knowledge resource coverage report and the list of knowledge resource mappings, previously described in detail.</p>
 </li>
 </ol>
-<p>To conclude the description of this FAIRification recipe, we explain the approach we use to identify two subsets of concepts referred to as <strong>exact matches</strong> and <strong>partial matches</strong>, starting from the whole set of concepts matching a specific input term. We analyze each term as well as each label associated with the retrieved matching concepts by means of the Stanford CoreNLP tools: we process each one of these texts by performing tokenization, lemmatization and PartOfSpeech tagging. Figure 2 shows an example of textual analysis of the term "Atretic follicles, increased number".</p>
+<p>To conclude the description of this FAIRification recipe, we explain the approach we use to identify two subsets of concepts referred to as <strong>exact matches</strong> and <strong>partial matches</strong>, starting from the whole set of concepts matching a specific input term. We analyze each term as well as each label associated with the retrieved matching concepts by means of the Stanford CoreNLP tools: we process each one of these texts by performing tokenization, lemmatization and PartOfSpeech tagging. <a href="#example">Figure 2</a> shows an example of textual analysis of the term "Atretic follicles, increased number".</p>
 <p>Given an input term and a label of a related matching concept, we consider the following two types of matches:</p>
 <ul>
 <li><p><strong>Exact match</strong>: when the set of lemmas belonging to the input term and the set of lemmas belonging to the concept label are equal. We exclude from this comparison lemmas identified as punctuation, numbers, determiners and conjunctions. We consider as negated exact matches (a particular type of exact matches) scenarios in which the set of lemmas of the input term and and the set of lemmas of the concept label differ by the addition of the negation words <em>no</em>, <em>not</em> and <em>without</em>.</p>
@@ -1278,10 +1316,33 @@ initFunction(initPrint)
 <li><p>if no <strong>exact</strong> matches are present, the term to concept match is described as a <strong>partial</strong> match. If there is more than one label of the matching concept that generated a <strong>partial</strong> match we consider the concept labels that has the higher number of shared lemmas with the original term.</p>
 </li>
 </ul>
-<p><img src="image_0.png" alt="overview"></p>
-<p><em>Figure 1 - Overview of the automatic ontology coverage evaluation strategy</em></p>
-<p><img src="image_1.png" alt="example"></p>
-<p><em>Figure 2 - Example of textual analyses of terms / concept labels</em></p>
+<p><a class="anchor-link" name="example"></a><br>
+<img src="image_1.png" alt="example"><br>
+<em>Figure 2 - Example of textual analyses of terms / concept labels</em></p>
+<hr>
+<h2 id="Authors">Authors<a class="anchor-link" href="#Authors"> </a></h2><table>
+<thead><tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Affiliation</th>
+<th style="text-align:left">orcid</th>
+<th style="text-align:left">CrediT role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Francesco Ronzano</td>
+<td style="text-align:left">Hospital del Mar Medical Research Institute (IMIM) and Universidad Pompeu Fabra (UPF), Barcelona, Spain</td>
+<td style="text-align:left"><a href="https://orcid.org/0000-0001-5037-9061">0000-0001-5037-9061</a></td>
+<td style="text-align:left">Writing</td>
+</tr>
+<tr>
+<td style="text-align:left">Laura Furlong</td>
+<td style="text-align:left">Hospital del Mar Medical Research Institute (IMIM) and Universidad Pompeu Fabra (UPF), Barcelona, Spain</td>
+<td style="text-align:left"><a href="https://orcid.org/0000-0002-9383-528X">0000-0002-9383-528X</a></td>
+<td style="text-align:left">Writing - Review, Funding acquisition</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -1295,15 +1356,20 @@ initFunction(initPrint)
     
             </div>
             <div class="c-textbook__footer" id="textbook_footer">
-              <nav class="c-page__nav">
+              
+<nav class="c-page__nav">
   
     
+    
+
     <a id="js-page__nav__prev" class="c-page__nav__prev" href="/the-fair-cookbook/recipes/chemical-identities.html">
       〈 <span class="u-margin-right-tiny"></span> Chemical identities - Generating I...
     </a>
   
 
   
+    
+
     
     <a id="js-page__nav__next" class="c-page__nav__next" href="/the-fair-cookbook/recipes/resolute_raw/rawRecipe_resolute.html">
       RESOLUTE experience Recipe <span class="u-margin-right-tiny"></span> 〉

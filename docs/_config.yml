@@ -84,7 +84,7 @@ download_page_header: Made with Jupyter Book                # A header that will
 
 #######################################################################################
 # Jupyter book extensions and additional features
-# page_titles: true
+page_titles: true
 
 # Bibliography and citation settings. See https://github.com/inukshuk/jekyll-scholar#configuration for options
 scholar:
